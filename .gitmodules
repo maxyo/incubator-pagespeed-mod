@@ -1,26 +1,26 @@
 # The two httpds are the longest syncs, so we'd like to start them first.
 [submodule "third_party/httpd/src"]
 	path = third_party/httpd/src
-	url = https://github.com/apache/httpd.git
+	url = git@github.com:apache/httpd.git
 [submodule "third_party/httpd24/src"]
 	path = third_party/httpd24/src
-	url = https://github.com/apache/httpd.git
+	url = git@github.com:apache/httpd.git
 [submodule "third_party/brotli/src"]
 	path = third_party/brotli/src
-	url = https://github.com/google/brotli.git
+	url = git@github.com:google/brotli.git
 [submodule "third_party/closure_library"]
 	path = third_party/closure_library
-	url = https://github.com/google/closure-library.git
+	url = git@github.com:google/closure-library.git
 [submodule "third_party/aprutil/src"]
 	path = third_party/aprutil/src
-	url = https://github.com/apache/apr-util.git
+	url = git@github.com:apache/apr-util.git
 [submodule "third_party/re2/src"]
 	path = third_party/re2/src
-	url = https://github.com/google/re2.git
+	url = git@github.com:google/re2.git
 [submodule "third_party/icu"]
     ignore = untracked
 	path = third_party/icu
-	url = https://github.com/apache/incubator-pagespeed-icu.git
+	url = git@github.com:apache/incubator-pagespeed-icu.git
 [submodule "third_party/libjpeg_turbo/src"]
 	path = third_party/libjpeg_turbo/src
 	url = https://chromium.googlesource.com/chromium/deps/libjpeg_turbo
@@ -31,31 +31,31 @@
 	url = https://chromium.googlesource.com/chromium/deps/yasm/patched-yasm
 [submodule "third_party/libpng/src"]
 	path = third_party/libpng/src
-	url = https://github.com/glennrp/libpng.git
+	url = git@github.com:glennrp/libpng.git
 # We copy a prebuild header during the build process.
    ignore = untracked
 [submodule "third_party/hiredis/src"]
 	path = third_party/hiredis/src
-	url = https://github.com/redis/hiredis.git
+	url = git@github.com:redis/hiredis.git
 [submodule "third_party/apr/src"]
 	path = third_party/apr/src
-	url = https://github.com/apache/apr.git
+	url = git@github.com:apache/apr.git
 [submodule "third_party/optipng"]
 	path = third_party/optipng
-	url = https://github.com/apache/incubator-pagespeed-optipng.git
+	url = git@github.com:apache/incubator-pagespeed-optipng.git
     ignore = untracked
 [submodule "third_party/libwebp"]
 	path = third_party/libwebp
 	url = https://chromium.googlesource.com/webm/libwebp.git
 [submodule "third_party/serf/src"]
 	path = third_party/serf/src
-	url = https://github.com/apache/serf.git
+	url = git@github.com:apache/serf.git
 [submodule "third_party/grpc/src"]
 	path = third_party/grpc/src
-	url = https://github.com/grpc/grpc.git
+	url = git@github.com:grpc/grpc.git
 [submodule "third_party/protobuf/src"]
 	path = third_party/protobuf/src
-	url = https://github.com/google/protobuf.git
+	url = git@github.com:google/protobuf.git
 [submodule "third_party/modp_b64"]
 	path = third_party/modp_b64
 	url = https://chromium.googlesource.com/chromium/src/third_party/modp_b64
@@ -77,13 +77,13 @@
 	url = https://chromium.googlesource.com/external/google-url
 [submodule "third_party/google-sparsehash/src"]
 	path = third_party/google-sparsehash/src
-	url = https://github.com/google/sparsehash.git
+	url = git@github.com:google/sparsehash.git
 [submodule "third_party/domain_registry_provider"]
 	path = third_party/domain_registry_provider
-	url = https://github.com/apache/incubator-pagespeed-drp.git
+	url = git@github.com:apache/incubator-pagespeed-drp.git
 [submodule "third_party/jsoncpp/src"]
 	path = third_party/jsoncpp/src
-	url = https://github.com/open-source-parsers/jsoncpp.git
+	url = git@github.com:open-source-parsers/jsoncpp.git
 [submodule "third_party/gflags/arch"]
 	path = third_party/gflags/arch
 	url = https://chromium.googlesource.com/external/webrtc/trunk/third_party/gflags
@@ -92,10 +92,10 @@
 	url = https://chromium.googlesource.com/external/gflags/src
 [submodule "testing/gtest"]
 	path = testing/gtest
-	url = https://github.com/google/googletest.git
+	url = git@github.com:google/googletest.git
 [submodule "testing/gmock"]
 	path = testing/gmock
-	url = https://github.com/google/googlemock.git
+	url = git@github.com:google/googlemock.git
 [submodule "tools/clang"]
 	path = tools/clang
 	url = https://chromium.googlesource.com/chromium/src/tools/clang
@@ -105,14 +105,14 @@
 # For building a development apache.
 [submodule "third_party/nghttp2"]
 	path = third_party/nghttp2
-	url = https://github.com/nghttp2/nghttp2
+	url = git@github.com:nghttp2/nghttp2
 [submodule "third_party/mod_fcgid"]
 	path = third_party/mod_fcgid
-	url = https://github.com/pagespeed/mod_fcgid.git
+	url = git@github.com:pagespeed/mod_fcgid.git
 [submodule "third_party/zlib/src"]
 	path = third_party/zlib/src
-	url = https://github.com/madler/zlib.git
+	url = git@github.com:madler/zlib.git
 [submodule "third_party/giflib/src"]
 	path = third_party/giflib/src
-	url = https://github.com/We-Amp/giflib-mirror.git
+	url = git@github.com:We-Amp/giflib-mirror.git
 
