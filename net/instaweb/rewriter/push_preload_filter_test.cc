@@ -112,10 +112,10 @@ TEST_F(PushPreloadFilterTest, BasicOperation) {
 
   ASSERT_EQ(2, links.size());
   EXPECT_STREQ(
-      "</A.a.css.pagespeed.cf.0.css>; rel=preload; as=style; nopush",
+      "</A.a.css.pagespeed.cf.0.css>; rel=preload; as=style",
       *links[0]);
   EXPECT_STREQ(
-      "</b.js.pagespeed.jm.0.js>; rel=preload; as=script; nopush",
+      "</b.js.pagespeed.jm.0.js>; rel=preload; as=script",
       *links[1]);
 }
 
@@ -145,7 +145,7 @@ TEST_F(PushPreloadFilterTest, Invalidation) {
 
   // Only b.js should be pushed --- or rather the .pagespeed version.
   ASSERT_EQ(1, links.size());
-  EXPECT_STREQ("</b.js.pagespeed.jm.0.js>; rel=preload; as=script; nopush",
+  EXPECT_STREQ("</b.js.pagespeed.jm.0.js>; rel=preload; as=script",
                *links[0]);
 }
 
@@ -234,22 +234,22 @@ TEST_F(PushPreloadFilterTest, IndirectCollected) {
   // These should be in preorder wrt to the dependencies between
   // CSS and things in it
   EXPECT_STREQ(
-        "</A.c.css.pagespeed.cf.0.css>; rel=preload; as=style; nopush",
+        "</A.c.css.pagespeed.cf.0.css>; rel=preload; as=style",
         *links[0]);
   EXPECT_STREQ(
-        "</i1.css>; rel=preload; as=style; nopush",
+        "</i1.css>; rel=preload; as=style",
         *links[1]);
   EXPECT_STREQ(
-        "</i2.css>; rel=preload; as=style; nopush",
+        "</i2.css>; rel=preload; as=style",
         *links[2]);
   EXPECT_STREQ(
-        "</A.d.css.pagespeed.cf.0.css>; rel=preload; as=style; nopush",
+        "</A.d.css.pagespeed.cf.0.css>; rel=preload; as=style",
         *links[3]);
   // not i3, since it's print only.
 
   // i1 already hinted.
   // i4 isn't, though.
-  EXPECT_STREQ("</i4.css>; rel=preload; as=style; nopush", *links[4]);
+  EXPECT_STREQ("</i4.css>; rel=preload; as=style", *links[4]);
 }
 
 }  // namespace
